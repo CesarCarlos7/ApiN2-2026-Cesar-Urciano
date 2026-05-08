@@ -1,5 +1,5 @@
 import {router as apiRouter} from "./routes/api.routes.js";
-import {mdebug} from "./middlewares/debug.middleware.js";
+import {mdebug} from "./middlewares/debug.middlewares.js";
 import {notFound, errorHandler} from "./middlewares/errors.middleware.js";
 import {mcors} from "./middlewares/mcors.middleware.js";
 

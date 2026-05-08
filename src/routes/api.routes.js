@@ -1,8 +1,8 @@
 import Router from "express";
 
-import ApiController from "../controllers/api.controller.js";
+import ApiController from "../controllers/api.controllers.js";
 
-import verifyId from "../middlewares/verifyId.middleware.js";
+import verifyId from "../middlewares/verify.id.middlewares.js";
 
 const router = Router();
 
