@@ -10,7 +10,7 @@ import {
   notFound,
   errorHandler
 } from "./middlewares/errors.middleware.js";
-
+const variavelteste = 1;
 const app = express();
 
 
