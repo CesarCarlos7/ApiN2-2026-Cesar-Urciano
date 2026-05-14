@@ -34,4 +34,18 @@ app.get("/home", (req, res) => {
 app.use(notFound);
 app.use(errorHandler);
 
+// --- ROTA DE VIEW (EJS) ---
+app.get("/home", (req, res) => {
+    res.render("home"); // Renderiza o esqueleto da página
+  });
+  app.get("/about", (req, res) => {
+    res.render("about");
+  });
+  app.get("/contact", (req, res) => {
+    res.render("contact");
+  });
+  app.get("/products", (req, res) => {
+    res.render("products");
+  });
+
 export default app;
