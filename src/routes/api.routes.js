@@ -4,6 +4,8 @@ import ApiController from "../controllers/api.controllers.js";
 
 import verifyId from "../middlewares/verify.id.middlewares.js";
 
+
+
 const router = express.Router();
 
 const controller = new ApiController();
@@ -21,6 +23,7 @@ router.get(
 
 export default router;
 router.get("/home", (req, res) => {
-  const dados = {titulo: "Loja Virtual"};
+  const dados = {titulo: "T.A Barbearia"};
   res.json(dados); // Entrega o JSON puro
 });
+
