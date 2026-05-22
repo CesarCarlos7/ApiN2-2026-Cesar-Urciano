@@ -17,7 +17,7 @@ export default class ProductsController {
   async getProductById(req, res, next) {
     try {
       const {id} = req.params; // Captura o "id" da URL
-      const product = {id: 1, nome: "Teclado", disponivel: true}; // simulação de acesso ao BD
+      const product = {id: 1, nome: "MOICANO DO NEYMAR 2011", disponivel: false}; // simulação de acesso ao BD
 
       if (!product) {
         return res.status(404).json({message: "Produto não encontrado"});

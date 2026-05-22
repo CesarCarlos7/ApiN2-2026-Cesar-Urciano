@@ -40,10 +40,13 @@ app.get("/products", (req, res) => {
   res.render("products");
 });
 
-app.use(notFound);
-app.use(errorHandler);
 app.get("/products/:id", (req, res) => {
   res.render("product-details"); // o cliente obterá os dados via fetch
 });
+
+
+
+app.use(notFound);
+app.use(errorHandler);
 
 export default app;
